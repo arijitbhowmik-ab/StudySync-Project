@@ -17,6 +17,9 @@
     text-decoration: none;
     /* box-sizing: border-box; */
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     height: 100vh;
     text-align: center;
@@ -24,6 +27,7 @@ body{
     padding: 0.1rem;
     overflow-x: hidden;
 }
+
 .header-content{
     max-width: 1280px;
     margin: 0 auto;
@@ -732,4 +736,28 @@ ul{
         margin-left: -0.45rem;
     }
     
+}
+.scroll-top-btn{
+    height: 3.5rem;;
+    width: 3.5rem;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    background-color: var(--primary-color);
+    color: var(--light-gray);
+    position: fixed;
+    right: 0.5rem;
+    bottom: 1rem;
+    cursor: pointer;
+    scroll-behavior: smooth;
+    display: none;
+}
+a .scroll-top-btn{
+    color: var(--light-gray);
+}
+a .scroll-top-btn:hover{
+    color: var(--dark-gray);
+}
+.scroll-top-btn i{
+    font-size: 2rem;   
 }
